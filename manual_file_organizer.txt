@@ -1,0 +1,31 @@
+
+'''So here's what i wanna do with this file. 
+I want a cli interface where i enter a path lets say desktop 
+and I get to go down using keys and select files or folders (or see file names inside the folders) 
+and select those as well and selection would be shown as [/] and unselected would be []. users would also get
+a key combination to use that will allow them to open up selected files and
+view what they are before they decide to delete them. and once they have selected everything they can press
+a key combination for file/folder deletion and they will get a warning message to review selected stuff before
+actual deletion.'''
+
+1. Input path name
+2. Show all the files in a clear simple manner with their size and date of creation
+3. let user arrow down on the list and use enter to select or unselect files
+4. incase of a folder when we press enter the folder opens up in a tree structure.
+5. then select files inside the folder. to go out press [SPACE]
+6. To view a file press v.
+7. Once all selected, go to the top and press enter on the line [DELETE]
+8. Warning comes up with list of selected files and folders and their size and created date. Options : [Proceed] [GO BACK]
+9. a summary report comes up at the end with how much storage was cleared up.
+10. lets see if there's a restore option as well I can add after deletion. so in the summary report I can add a Restore files option.
+    It will allow users to select deleted files of this session and restore them. All or some.
+
+Tools I need for this.
+----------------------
+Python
+pathlib
+Rich Library (so it looks cleaner)
+
+
+** A better idea would be to include agents here who dig deep and just bring stuff to surface. stuff from apps we dont use anymore. Files etc
+It finds all that in deep clean brings it up to surface, explains what it is and then lets you decide what to do.
